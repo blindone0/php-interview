@@ -15,19 +15,11 @@ $output = [];
 //   2 => [3]
 // ];
 
-//foreach ($input as $key => $value) {
-//    array_push($output, $key);
-//
-//    foreach ($value as $ValuesArraySingleElement) {
-//        array_push($output[$key], $ValuesArraySingleElement);
-//
-//    }
-//
-//}
 $i = 1;
 
 foreach ($input as $key => $value) {
-    $output+= [$key => array_values($value)];
+   // printf("%d => %s", $i, array_values($value) );
+    $output+= [$i => array_values($value)];
     $i++;
 }
 
